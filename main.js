@@ -8,7 +8,7 @@ botones.forEach(function(boton) {
         let url = boton.getAttribute("data-url");
 
         setTimeout(function() {
-            window.open(url, "_blank");
+            window.open(url, "_blank");1
             
             
             setTimeout(function() {
@@ -17,3 +17,14 @@ botones.forEach(function(boton) {
         }, 3000);
     });
 });
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+

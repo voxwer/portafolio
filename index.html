@@ -5,59 +5,145 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>tonydev</title>
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="secciontwo.css">
+  <link rel="stylesheet" href="secthree.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 
-<body>
-  <div class="tudo">
-    <section class="menu">
-        <header class="menu__header">
-            <img src="assets\vector.png">
-            <h3 class="menu__title">Jose alberto</h3>
-        </header>
-        <nav>
-            <ul class="menu__list">
-              <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-              <li class="menu__list__item"><a href="#skills">Skills</a></li>
-              <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-              <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                <li class="menu__list__item"><a href="#contacto">Contacto@fulana.com</a></li>
-            </ul>
-            <li class="menu__list__item__contato"><a href="#contacto">tonnyantonii0@gmail.com</a></li>
-        </nav>
-    </section>
-
-    <!-- Sección del Header/Title/Hero -->
-    <section class="title">
-      <div class="title__div">
-        <img class="title__profile" src="assets\profile.jpg">
-        <div class="title__container">
-          <h2 class="title__bio">Hola, mi nombre es Jose alberto y construyo paginas web</h2>
-          <h3 class="title__subsection">Desde siempre me llamo la atencion la tecnologia y pienso que cosas puedo implementarla, estoy aprendiendo a hacer este tipo de proyectos me encantaria, ser fullstack en el futuro y mi promesa a largo plazo, es saber hacer los mejores entornos UX,UI como backend, y varios lenguajes de programacion esperemos que pronto pueda crear cosas incribles para ayudarme a mi, a mi familia y mi pais.</h3>
-          <ul class="title__network">
-            <button class="title__network__item" data-url="https://github.com/voxwer"="">Github</button>
-            <button class="title__network__item" data-url=""> Linkedin</button>
-            <button class="title__network__item" data-url="https://www.instagram.com/tonyl_luis/">Instagram</button>
-            <button class="title__network__item" data-url="assets/curriculum.pdf">Currículum</button>
-              </ul>
-            </div>
-          </div>
-        </section>
-        
-        <div class="redes">
-          <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" fill="currentColor" class="octicon octicon-mark-github v-align-middle color-fg-default">
-            <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
-  </svg>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="32" height="32" focusable="false">
-    <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
-  </svg>
-  <div>
-    <div>
-      
-    </div>
+<header class="header" id="navbar">
+  <div class="logo">
+    <img src="/assets/blosh.svg" alt="Descripción del SVG">
   </div>
-</div>
-<script src="main.js"></script>
+  <nav class="nav-container">
+    <ul class="nav-links">
+      <li><a class="gradiente-hover" href="#Inicio">INICIO</a></li>
+      <li><a class="gradiente-hover" href="#tecnologias">TECNOLOGIAS</a></li>
+      <li><a class="gradiente-hover" href="#secportafolio">FORMACION</a></li>
+      <li><a class="gradiente-hover" href="#">PROYECTOS</a></li>
+      <li><a class="gradiente-hover" href="#">CONTACTAME</a></li>
+    </ul>
+    <div id="boton__Repro">
+      <button id="boton-mute">
+        <svg id="icono-mute" fill="currentColor" width="23px" height="23px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Icono de audio habilitado -->
+        <path d="M13 3.7446C13 3.27314 12.8728 2.50021 12.1657 2.14424C11.4151 1.76635 10.7163 2.19354 10.3623 2.51158L4.94661 7.43717H3C1.89543 7.43717 1 8.3326 1 9.43717L1.00001 14.6248C1.00001 15.7293 1.89544 16.6248 3.00001 16.6248H4.95001L10.3623 21.4891C10.7175 21.8081 11.416 22.2331 12.1656 21.8554C12.8717 21.4998 13 20.7286 13 20.2561V3.7446Z" fill="#ffffff"/>
+        <path d="M17.336 3.79605L17.0952 3.72886C16.5633 3.58042 16.0117 3.89132 15.8632 4.42329L15.7289 4.90489C15.5804 5.43685 15.8913 5.98843 16.4233 6.13687L16.6641 6.20406C18.9551 6.84336 20.7501 9.14615 20.7501 12.0001C20.7501 14.854 18.9551 17.1568 16.6641 17.7961L16.4233 17.8632C15.8913 18.0117 15.5804 18.5633 15.7289 19.0952L15.8632 19.5768C16.0117 20.1088 16.5633 20.4197 17.0952 20.2713L17.336 20.2041C20.7957 19.2387 23.2501 15.8818 23.2501 12.0001C23.2501 8.11832 20.7957 4.76146 17.336 3.79605Z" fill="#ffffff"/>
+        <path d="M16.3581 7.80239L16.1185 7.73078C15.5894 7.57258 15.0322 7.87329 14.874 8.40243L14.7308 8.88148C14.5726 9.41062 14.8733 9.96782 15.4024 10.126L15.642 10.1976C16.1752 10.3571 16.75 11.012 16.75 12C16.75 12.9881 16.1752 13.643 15.642 13.8024L15.4024 13.874C14.8733 14.0322 14.5726 14.5894 14.7308 15.1185L14.874 15.5976C15.0322 16.1267 15.5894 16.4274 16.1185 16.2692L16.3581 16.1976C18.1251 15.6693 19.25 13.8987 19.25 12C19.25 10.1014 18.1251 8.33068 16.3581 7.80239Z" fill="#ffffff"/>
+        </svg>
+        <svg id="icono-unmute" fill="currentColor" width="23px" height="23px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.1657 2.14424C12.8728 2.50021 13 3.27314 13 3.7446V20.2561C13 20.7286 12.8717 21.4998 12.1656 21.8554C11.416 22.2331 10.7175 21.8081 10.3623 21.4891L4.95001 16.6248H3.00001C1.89544 16.6248 1.00001 15.7293 1.00001 14.6248L1 9.43717C1 8.3326 1.89543 7.43717 3 7.43717H4.94661L10.3623 2.51158C10.7163 2.19354 11.4151 1.76635 12.1657 2.14424Z" fill="#ffffff"/>
+          <path d="M21.8232 15.6767C21.4327 16.0673 20.7995 16.0673 20.409 15.6768L18.5 13.7678L16.591 15.6768C16.2005 16.0673 15.5673 16.0673 15.1768 15.6767L14.8233 15.3232C14.4327 14.9327 14.4327 14.2995 14.8233 13.909L16.7322 12L14.8232 10.091C14.4327 9.70044 14.4327 9.06727 14.8232 8.67675L15.1767 8.3232C15.5673 7.93267 16.2004 7.93267 16.591 8.32319L18.5 10.2322L20.409 8.32319C20.7996 7.93267 21.4327 7.93267 21.8233 8.3232L22.1768 8.67675C22.5673 9.06727 22.5673 9.70044 22.1768 10.091L20.2678 12L22.1767 13.909C22.5673 14.2995 22.5673 14.9327 22.1767 15.3232L21.8232 15.6767Z" fill="#ffffff"/>
+        </svg>
+        <!-- Icono de audio inhabilitado -->
+      </button>
+    </div>
+  </nav>
+</header>
+
+
+  
+<body>
+  <section class="Inicio" id="Inicio">
+        <div class="contenedor__video">
+          <video class="video__Fondo" muted loop plays-inline >
+            <source src="/assets/videoback.mp4" type="video/mp4" class="back-video">
+          </video>
+
+        <article class="contenido_real">
+          <div class="individual">
+            <img class="fotografia" src="/assets/profile.jpg" alt="Foto de Jose alberto">
+          </div>
+            <div class="descripcion-real">
+              <h2 class="descripcion-nombre">Hola, mi nombre es Jose alberto y construyo paginas web</h2>
+              <div class="descripcion-completa">
+                <h3 class="descripcion">Desde siempre me llamo la atencion la tecnologia y pienso en que cosas puedo implementarla, estoy aprendiendo a hacer este tipo de proyectos me encantaria, ser fullstack en el futuro y mi promesa a largo plazo, es saber hacer los mejores entornos UX,UI, aprender varios lenguajes de programacion, esperemos que pronto pueda crear cosas incribles para ayudarme a mi, mi familia y mi pais.</h3>
+              </div>
+            </div>
+        <div class="botones-directos">
+          
+          <button class="title__network__item" id="gitHub" data-url="https://github.com/voxwer"="">Github</button>
+          <button class="title__network__item" id="linKedin" data-url="/index.html"> Linkedin</button>
+          <button class="title__network__item" id="insTagram" data-url="https://www.instagram.com/tonyl_luis/">Instagram</button>
+          <button class="title__network__item" id="cuRiculm" data-url="assets/curriculum.pdf">Currículum</button>
+          
+        </div>
+      </div>
+    </article>
+</section> 
+
+
+
+<section class="tecnologias" id="tecnologias">
+    <div class="container__tecnologias">
+    <div class="icons" >
+      <div class="cajas__tecnologicas">
+        <img class="distort-svg" id="reacticon" height="95px" width="90px" src="/assets/reactn.svg" alt="Logo de React">
+      </div>
+      <div class="cajas__tecnologicas">
+        <img class="distort-svg" id="javascripticon" height="90px" width="90px" src="/assets/jsjs.svg" alt="Icono de javascript">
+      </div>
+      <div class="cajas__tecnologicas">
+        <img height="90px" width="90px" class="distort-svg" height="90px" width="90px" src="/assets/css3.svg" alt="Icono de css3">
+      </div>
+      <div class="cajas__tecnologicas">
+        <img height="90px" width="90px" class="distort-svg" height="90px" width="90px" src="/assets/html5.svg" alt="Icono de Html5">
+      </div>
+    </div>
+
+    <div id="cajas__tecnologicas">
+      <div class="card_Container">
+        <h3 class="texto__Descripciontec glass__effect">HTML5, CSS3, JAVASCRIPT,REACT NATIVE, Son herramientas que manejo para la creacion de proyectos, el conocimiento de dichas tecnologias, y el framework, me ayudan a concluir mis proyectos, proximamente veremos dichos ejemplos.
+        </h3>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="secportafolio" class="secportafolio">
+  <article class="formacion">
+    <div class="background">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+   </div>
+    <div class="cbtisinfo">
+      <div class="informacioncbtis">
+
+        <div class="presentacion__escolar">
+          <h1 class="escuela__academica"  id="fonttsize" >CENTRO DE BACHILLERATO </h1>
+          <h1 id="fonttsize2">TECNOLOGICO INDUSTRIAL Y DE SERVICIOS
+          </h1>
+          <h1 id="fonttsize3" >NUMERO 202 "JOSE VAZCONCELOS"</h1>
+        </div>
+
+        <div class="descripcion__formacion">
+          <p id="fonttsize4" >En mi formaciona academica aprendi a hacer diferentes paginas web con codigo, HTML, CSS y JavaScript al igual que con Wordpress, de igual manera usando como IDE Eclipse para hacer aplicaciones para ios y Android, y conocimiento basico en servidores con Apache tomcat, en este momento me encuentro cursando el curso de alura next education donde estoy aprendiento nuevas cosas. </p>
+        </div>
+
+      </div>
+      <div class="mapsubicacion">
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4094.6442443074093!2d-98.99382522394866!3d19.59229557478284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fa11df9d0b5b%3A0x4323f168f9a4626d!2sCentro%20de%20Bachillerato%20Tecnol%C3%B3gico%20Industrial%20y%20de%20Servicios%20n%C3%BAm.%20202!5e0!3m2!1ses!2smx!4v1716694441667!5m2!1ses!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </article>
+</section>
+  
+
+  <script src="speakerlogic.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>

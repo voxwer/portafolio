@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Jersey+25+Charted&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Jersey+25+Charted&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Deca:wght@100&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+.body
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #6f5396;
+    overflow: hidden;
+}
+
+.background span {
+    width: 10vmin;
+    height: 10vmin;
+    border-radius: 10vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    animation: move;
+    animation-duration: 39;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.background span:nth-child(0) {
+    color: #de9ce2;
+    top: 68%;
+    left: 36%;
+    animation-duration: 74s;
+    animation-delay: -26s;
+    transform-origin: 10vw 9vh;
+    box-shadow: -20vmin 0 3.0661032904244134vmin currentColor;
+}
+.background span:nth-child(1) {
+    color: #de9ce2;
+    top: 95%;
+    left: 10%;
+    animation-duration: 19s;
+    animation-delay: -5s;
+    transform-origin: -23vw -4vh;
+    box-shadow: -20vmin 0 2.6376890247208786vmin currentColor;
+}
+.background span:nth-child(2) {
+    color: #b3adff;
+    top: 89%;
+    left: 33%;
+    animation-duration: 108s;
+    animation-delay: -109s;
+    transform-origin: -23vw -10vh;
+    box-shadow: -20vmin 0 2.849612603583844vmin currentColor;
+}
+.background span:nth-child(3) {
+    color: #b3adff;
+    top: 97%;
+    left: 89%;
+    animation-duration: 32s;
+    animation-delay: -6s;
+    transform-origin: 5vw -24vh;
+    box-shadow: -20vmin 0 2.7821744519682694vmin currentColor;
+}
+.background span:nth-child(4) {
+    color: #de9ce2;
+    top: 57%;
+    left: 14%;
+    animation-duration: 102s;
+    animation-delay: -87s;
+    transform-origin: -20vw -18vh;
+    box-shadow: -20vmin 0 2.8547943097176285vmin currentColor;
+}
+.background span:nth-child(5) {
+    color: #de9ce2;
+    top: 7%;
+    left: 88%;
+    animation-duration: 30s;
+    animation-delay: -97s;
+    transform-origin: -8vw 12vh;
+    box-shadow: 20vmin 0 3.181676419321002vmin currentColor;
+}
+.background span:nth-child(6) {
+    color: #802dd2;
+    top: 50%;
+    left: 83%;
+    animation-duration: 49s;
+    animation-delay: -105s;
+    transform-origin: 22vw 22vh;
+    box-shadow: 20vmin 0 2.771252187016778vmin currentColor;
+}
+.background span:nth-child(7) {
+    color: #b3adff;
+    top: 36%;
+    left: 84%;
+    animation-duration: 49s;
+    animation-delay: -75s;
+    transform-origin: 13vw 8vh;
+    box-shadow: -20vmin 0 3.0673366743360715vmin currentColor;
+}
+
+
+.cbtisinfo{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.mapsubicacion{
+    margin: 6vh 0 6vh 6vh;
+
+}
+
+.secportafolio{
+    background-color: rgb(12, 1, 41);
+}
+
+.informacioncbtis{
+    margin: 20px 0 20px 0;
+}
+
+#fonttsize{
+    font-size: 40px;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+#fonttsize2{
+    font-size: 35px;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+#fonttsize3{
+    font-size: 25px;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.descripcion__formacion{    
+    margin: 2vh 13vh 2vh 15vh;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    
+}
+
+.presentacion__escolar{
+    margin: 5vh 0 8vh 15vh;
+}
+
+.mapa{
+    border-radius: 1rem;
+}
