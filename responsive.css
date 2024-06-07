@@ -1,0 +1,11 @@
+
+/* main.css */
+@media screen and (max-width:1025px) {
+    .video__Fondo{
+        width: 100%;
+        filter: blur(2rem);
+        margin: 0 auto;
+        min-width: 1025px;
+    }
+
+}
