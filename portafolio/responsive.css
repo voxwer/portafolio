@@ -1,0 +1,28 @@
+
+/* main.css */
+@media screen and (max-width:1025px) {
+    .video__Fondo{
+        width: 100%;
+        filter: blur(2rem);
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991.98px) {
+    /* Estilos para dispositivos medianos */
+    .cajas__tecnologicas:nth-child(2),
+    .cajas__tecnologicas:nth-child(3),
+    .cajas__tecnologicas:nth-child(4),
+    .cajas__tecnologicas:nth-child(5){
+        display: none;
+    }
+
+    .mapa{
+        min-height: 600px;
+        min-width: 300px;
+        max-width: 600px;
+        max-width: 600px;
+    }
+
+    
+}   

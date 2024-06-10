@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+#navbar {
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.1));
+    z-index: 10; /* Asegura que el header esté por encima de otros elementos */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    height: 60px;
+}
+
+header .logo img {
+    height: 50px;
+    width: auto;
+}
+
+.logo {
+    margin-top: 0.9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: white; /* Color de texto blanco */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    padding: 10px; /* Espaciado dentro del enlace */
+}
+
+nav ul li {
+    display: inline-block; /* Muestra los elementos de la lista en línea */
+    margin-right: 20px; /* Espaciado entre elementos de la lista */
+}
+
+nav ul {
+    list-style-type: none; /* Elimina los estilos predeterminados de la lista */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento de la lista */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-container {
+    font-family: "Lexend Deca", sans-serif;
+    width: 86%;
+}
+
+#boton-mute {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+#icono-mute,
+#icono-unmute {
+    display: none;
+}
+
+#icono-mute.active,
+#icono-unmute.active {
+    display: block;
+}
+
+.icons {
+    flex-wrap: wrap-reverse;
+    gap: 2%;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.tecnologias {
+    width: 100%;
+    height: 250px;
+    background: url('https://i.pinimg.com/originals/b9/01/85/b9018579aebd5c161b0eac79ca04f17a.gif') no-repeat center center;
+    display: inline;
+    background-size: 100% 150%;
+}
+
+.container__tecnologias {
+    display: inline;
+    flex-direction: row-reverse;
+}
+
+.texto__Descripciontec {
+    padding: 2.5em;
+}
+
+.card_Container {
+    font-family: "Lexend Deca", sans-serif;
+    width: 45rem;
+    height: 13rem;
+    border: 5px solid #fafafa10;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+.glass__effect {
+    backdrop-filter: blur(0.5rem);
+    border-radius: 1rem;
+}
+
+/* Contacto */
+.contendor__contacto {
+    display: flex;
+}
+
+.descripcion__Contacto {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0 0 0 1%;
+}
+
+.contacto {
+    font-size: 2rem;
+    background-color: blue;
+}
+
+.formulario__contacto {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    outline: none;
+    border: none;
+}
+
+.inputs {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: color rgb(240, 140, 234);
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    font: inherit;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+}
+
+.imagen__contacto {
+    border: 5px solid #ffffff;
+    object-fit: cover;
+}
+
+#contacto {
+    width: 100%;
+    background-color: rgb(19, 0, 23);
+}
+
+.contendor__contacto {
+    flex-wrap: wrap;
+    margin: 0 0 0 5%;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    /*main css*/
+
+    .fotografia {
+        height: 35%;
+        width: 35%;
+        border-radius: 50%;
+        border-color: #F3F3F3;
+        border: 5px solid white;
+        margin-top: 3%;
+      }
+
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+        
+    }
+
+    .gradiente-hover:nth-child(1),
+    .gradiente-hover:nth-child(2),
+    .gradiente-hover:nth-child(3),
+    .gradiente-hover:nth-child(4),
+    .gradiente-hover:nth-child(5),
+    .gradiente-hover:nth-child(6){
+        display: none;
+    }
+
+
+    .boton-mute:nth-child(1){
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 0px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .cbtisinfo{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+    }
+
+    .mapsubicacion{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .mapa{
+        min-height: 300px;
+        min-width: 300px;
+        max-width: 600px;
+        max-width: 600px;
+    }
+
+    .mapsubicacion{
+        margin: 0 0 0 0;
+    
+    }
+
+    
+    /* Parte morada */
+
+    .card_Container {
+        font-family: "Lexend Deca", sans-serif;
+        width: 99%;
+        height: 13%;
+        border: 5% solid #fffdfd10;
+        margin: 0 auto;
+        border-radius: 1%;
+    }
+
+    .tecnologias {
+        width: 100%;
+        height: 250%;
+        background: url('https://i.pinimg.com/originals/b9/01/85/b9018579aebd5c161b0eac79ca04f17a.gif') no-repeat center center;
+        display: inline;
+        background-size: 100% 150%;
+    }
+
+    /*  parte Experiencia */
+
+
+    .mapsubicacion{
+        margin: 0;
+    
+    }
+
+
+    .imgexperience{
+        min-height: 200px;
+        min-width: 100px;
+    }
+
+    .informacion{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .informacion__buttons{
+        margin-left: 0%;
+    }
+
+    .informacion__button2{
+        margin-top: 2%;
+    }
+    
+    .informacion__buttons{
+        margin-top: 2%;
+    }
+
+    /*Contacto*/
+
+
+
+
+}

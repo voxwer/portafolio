@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Space%20Grotesk:700|Space%20Grotesk:400');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.blur {
+  filter: blur(5px); /* Aplica el efecto de desenfoque */
+  transition: filter 0.5s ease; /* Agrega una transición suave al efecto de desenfoque */
+}
+
+:root {
+  --m: 1rem;
+
+  --red: #FF6565;
+  --pink: #FF64F9;
+  --purple: #6B5FFF;
+  --blue: #4D8AFF;
+  --green: #5BFF89;
+  --yellow: #FFEE55;
+  --orange: #FF6D1B;
+}
+
+body {
+  overflow-x: hidden;
+  border: solid red;
+  background-color: #131414;
+  color: #F3F3F3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+button {
+  border: calc(0.08 * var(--m)) solid transparent;
+  position: relative;
+  color: #F3F3F3;
+  font-family: 'Space Grotesk';
+  font-size: var(--m);
+  border-radius: calc(0.7 * var(--m));
+  padding: calc(0.5 * var(--m)) calc(1 * var(--m));
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+  background: linear-gradient(#121213, #121213),
+    linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),
+    linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
+  background-origin: border-box;
+  background-clip: padding-box, border-box, border-box;
+  background-size: 200%;
+  animation: animate 2s infinite linear;
+}
+
+button::before {
+  content: '';
+  background: linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
+  height: 30%;
+  width: 60%;
+  position: absolute;
+  bottom: -20%;
+  z-index: -5;
+  background-size: 200%;
+  animation: animate 2s infinite linear;
+  filter: blur(calc(0.8 * var(--m)));
+}
+
+button:hover,
+button:hover::before {
+  animation: animate 0.5s infinite linear;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+.Inicio {
+  width: 100%;
+  max-width: 100vw;
+}
+
+.contenido_real {
+  height: 60%;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+
+.contenedor__video {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.video__Fondo {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  background-size: cover;
+  object-fit: cover;
+  filter: blur(1rem);
+}
+
+.fotografia {
+  height: 22%;
+  width: 22%;
+  border-radius: 50%;
+  border-color: #F3F3F3;
+  border: 5px solid white;
+  margin-top: 3%;
+}
+
+.descripcion-real {
+  font-family: "Lexend Deca", sans-serif;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.individual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 9px;
+  padding-top: 15vh;
+}
+
+.descripcion-nombre {
+  padding: 0 15% 2% 15%;
+  text-align: center;
+  
+}
+
+.descripcion {
+  text-align: center;
+}
+
+.botones-directos {
+  display: flex;
+  justify-content: center;
+}
+
+.title__network__item {
+  margin: 2% 2% 2% 2%;
+}
+
+.descripcion-completa {
+  padding: 0 15% 0 15%;
+  padding-bottom: 0; /* Ajusta este valor según sea necesario */
+}
+
+.back-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
