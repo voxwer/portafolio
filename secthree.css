@@ -82,24 +82,27 @@
 .experiencia__one{
     display: flex;
     padding: 5vh 0 5vh 0;
+    flex-wrap: wrap;
     align-items: center;
 
 }
 
 .experiencia_two{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row-reverse;
     padding: 0 0 5vh 0;
     align-items: center;
 }
 
 .informacion__buttons{
-    margin-left: 17%;
+    margin-left: 0%;
 }
 
 .imgexperience{
     padding: 0vh 10vh 0vh 10vh;
     border-radius: 10% ;
+    flex-wrap: wrap;
 }
 
 .botones{
